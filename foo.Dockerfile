@@ -23,7 +23,7 @@ WORKDIR /go/src/gotest-services
 # RUN go build -o /user-service
 
 COPY ./services/foo/go.mod .
-COPY ./services/foo/go.sum .
+# COPY ./services/foo/go.sum .
 RUN go mod download
 
 COPY ./services/foo/*.go .
