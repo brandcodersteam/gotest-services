@@ -4,13 +4,15 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	// "github.com/brandcodersteam/gotest-services/shared/"
+
+	"github.com/brandcodersteam/gotest-services/shared/bar/baz"
 )
 
 var Thingy string
 
 func init() {
 	Thingy = "This is a thingy initializing..."
+	fmt.Println(baz.ReturnBazHello())
 }
 
 func main() {
