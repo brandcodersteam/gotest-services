@@ -5,8 +5,8 @@
 FROM golang:1.16-alpine
 RUN apk add git
 
-ENV GO111MODULE=on \
-  GOPRIVATE=github.com/brandcodersteam/gotest-services
+ENV GO111MODULE=on
+# GOPRIVATE=github.com/brandcodersteam/gotest-services
 
 
 WORKDIR /go/src/gotest-services
